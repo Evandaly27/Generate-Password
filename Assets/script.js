@@ -35,48 +35,48 @@ else {
   alert("The password will be " + characterNumber + " characters long.");
 }
 
-lowercaseowercase = confirm("Would you like to include lowercase characters?");
-if (lowercase) {
-  var lowercaseCharacters = alert("The password will include lowercase characters.");
+hasLowercase = confirm("Would you like to include lowercase characters?");
+if (hasLowercase) {
+   alert("The password will include lowercase characters.");
 }
 else {
   alert("The password will not include lowercase characters.");
 }
 
-uppercase = confirm("Would you like to include uppercase characters?");
-if (uppercase) {
+hasUppercase = confirm("Would you like to include uppercase characters?");
+if (hasUppercase) {
   alert("The password will include uppercase characters.");
 }
 else {
   alert("The password will not include uppercase characters.");
 }
 
-numbers = confirm("Would you like to include numbers?");
-if (numbers) {
+hasNumbers = confirm("Would you like to include numbers?");
+if (hasNumbers) {
   alert("The password will include numbers.");
 }
 else {
   alert("The password will not include numbers.");
 }
 
-specialCharacters = confirm("Would you like to include special characters?");
-if (specialCharacters) {
+hasSpecial = confirm("Would you like to include special characters?");
+if (hasSpecial) {
   alert("The password will include special characters.")
 }
 else {
   alert("The password will not inculde special characters.")
 }
-if (lowercase === false && uppercase === false && numbers === false && specialCharacters === false){
+if (hasLowercase === false && hasUppercase === false && hasNumbers === false && hasSpecial === false){
   return "Please select at least one type of character"
 }
 
-if (lowercase) {
+if (hasLowercase) {
   possibleCharacters = possibleCharacters.concat(lowercase);
 }
-if (uppercase) {
+if (hasUppercase) {
   possibleCharacters = possibleCharacters.concat(uppercase);
 }
-if (numbers) {
+if (hasNumbers) {
   possibleCharacters = possibleCharacters.concat(numbers);
 }
 if (specialCharacters) {
