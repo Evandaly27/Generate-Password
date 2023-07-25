@@ -18,13 +18,13 @@
 
 // Assignment Code
 
-// Arrays with every character to be used in the password
+// Arrays with every character to be used in the password.
 function generatePassword() {
   var numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
   var uppercase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
   var lowercase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
   var specialCharacters = ['@', '%', '+', '\\', '/', "'", '!', '#', '$', '^', '?', ':', ',', ')', '(', '}', '{', ']', '[', '~', '-', '_', '.'];
-  var possibleCharacters = []; // used later to store the character sets from the preferences selected
+  var possibleCharacters = []; // used later to store the character sets from the preferences selected.
 
 
 characterNumber = prompt("How many characters would you like to have in your password? 8-128."); // prompts user to pick how many characters they would like
